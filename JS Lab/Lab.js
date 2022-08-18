@@ -37,21 +37,21 @@
   -----------------------------------------------------------------*/
   // Your solution for 02-addTwoNumbers here:
   
-  // function addTwoNumbers(num1, num2){
-  //     let result = num1 + num2;
-  //         if(isNaN(num1) || isNaN(num2)){
-  //         return "NaN";
-  //         } else if(isNaN(num1) && isNaN(num2)){
-  //         return "NaN"
-  //         } else {
-  //         return result;
-  //         }
-  // }
-  // console.log(addTwoNumbers(5,10));
-  // console.log(addTwoNumbers(10,-2));
-  // console.log(addTwoNumbers(0,0));
-  // console.log(addTwoNumbers("Hello", 5));
-  // console.log(addTwoNumbers("Hello", "Hello"));
+  function addTwoNumbers(num1, num2){
+      let result = num1 + num2;
+          if(isNaN(num1) || isNaN(num2)){
+          return "NaN";
+          } else if(isNaN(num1) && isNaN(num2)){
+          return "NaN"
+          } else {
+          return result;
+          }
+  }
+  console.log(addTwoNumbers(5,10));
+  console.log(addTwoNumbers(10,-2));
+  console.log(addTwoNumbers(0,0));
+  console.log(addTwoNumbers("Hello", 5));
+  console.log(addTwoNumbers("Hello", "Hello"));
 
 
   
@@ -69,17 +69,17 @@
   -----------------------------------------------------------------*/
   // Your solution for 03-sumNumbers here:
   
-  // function sumNumbers(arr){
-  //   let total = 0;
-  //   arr.forEach(numbers => {
-  //   total += numbers;
-  //   })
-  //   console.log(total);
-  // };
+  function sumNumbers(arr){
+    let total = 0;
+    arr.forEach(numbers => {
+    total += numbers;
+    })
+    console.log(total);
+  };
 
-  // sumNumbers([10]);
-  // sumNumbers([5, 10]);
-  // sumNumbers([]);
+  sumNumbers([10]);
+  sumNumbers([5, 10]);
+  sumNumbers([]);
 
   
 
@@ -98,19 +98,19 @@
   -----------------------------------------------------------------*/
   // Your solution for 04-addList here:
   
-  // function addList(arr){
-  //     let result = 0;
-  //     arr.forEach(numbers => {
-  //     result += numbers;
-  //     })
-  //     console.log(result);
-  //   };
+  function addList(arr){
+      let result = 0;
+      arr.forEach(numbers => {
+      result += numbers;
+      })
+      console.log(result);
+    };
 
-  //   addList([]);
-  //   addList([5]);
-  //   addList([5, 10]);
-  //   addList([5, 10, 15]);
-  //   addList([5, 10, 15, -30]);
+    addList([]);
+    addList([5]);
+    addList([5, 10]);
+    addList([5, 10, 15]);
+    addList([5, 10, 15, -30]);
 
   /*-----------------------------------------------------------------
   Challenge: 05-computeRemainder
@@ -127,15 +127,15 @@
   -----------------------------------------------------------------*/
   // Your solution for 05-computeRemainder:
   
-  // function computeRemainder(dividend, divisor){
-  //   let result = 0;
-  //   result = dividend % divisor;
-  //   console.log(result)
-  // };
+  function computeRemainder(dividend, divisor){
+    let result = 0;
+    result = dividend % divisor;
+    console.log(result)
+  };
 
-  // computeRemainder(10, 2);
-  // computeRemainder(4,0); 
-  // computeRemainder(10.5, 3);
+  computeRemainder(10, 2);
+  computeRemainder(4,0); 
+  computeRemainder(10.5, 3);
 
   
   /*-----------------------------------------------------------------
@@ -154,15 +154,15 @@
 
   // The below works to log the range but I was unable to write a function to return "First argument must be less than second" if num1  was > num2.
 
-  // function range(num1, num2){
-  //   for(i = num1; i < num2; i+1){
-  //    console.log(i++);
-  //   }
-  //  };
+  function range(num1, num2){
+    for(i = num1; i < num2; i+1){
+     console.log(i++);
+    }
+   };
  
-  //  range(1,4);
-  //  range(-2, 3);
-  //  range(5, 2);
+   range(1,4);
+   range(-2, 3);
+   range(5, 2);
   
   
   
@@ -177,11 +177,11 @@
   -----------------------------------------------------------------*/
   // Your solution for 07-reverseUpcaseString here:
   
-// function reverseString(str){
-//   result = str.split("").reverse().join("").toUpperCase();
-//   console.log(result);
-// }
-// reverseString("SEI Rocks!");
+function reverseString(str){
+  result = str.split("").reverse().join("").toUpperCase();
+  console.log(result);
+}
+reverseString("SEI Rocks!");
 
   
 
@@ -275,11 +275,11 @@
   
   // function formatWithPadding(num1, str, num2){
 
-    // function formatWithPadding(num1, str, num2){ { 
-    //   var result = 0, i = 0;
-    //   for(i;i<this.length;i++)if(this[i]==c)result++;
-    //   return result;
-    // };
+  //   function formatWithPadding(num1, str, num2){ { 
+  //     var result = 0, i = 0;
+  //     for(i;i<this.length;i++)if(this[i]==c)result++;
+  //     return result;
+  //   };
 
 
   
@@ -339,22 +339,22 @@
   -----------------------------------------------------------------*/
   // Your solution for 12-hammingDistance here:
 
-// let str1 = "abc";
-// let str2 = "abc";
+let str1 = "abc";
+let str2 = "abc";
 
-// function hammingDistance(str1, str2){
-//    if (str1.length !== str2.length) {
-//       return "NaN";
-//    }
-//    let dist = 0;
-//    for (let i = 0; i < str1.length; i += 1) {
-//       if (str1[i] !== str2[i]) {
-//          dist += 1;
-//       };
-//    };
-//    return dist;
-// };
-// console.log(hammingDistance(str1, str2));
+function hammingDistance(str1, str2){
+   if (str1.length !== str2.length) {
+      return "NaN";
+   }
+   let dist = 0;
+   for (let i = 0; i < str1.length; i += 1) {
+      if (str1[i] !== str2[i]) {
+         dist += 1;
+      };
+   };
+   return dist;
+};
+console.log(hammingDistance(str1, str2));
   
   
   
