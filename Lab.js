@@ -12,13 +12,13 @@
   -----------------------------------------------------------------*/
   // Your solution for 01-addOne here:
 
-    // function addOne(num1){
-    //     let result = num1 + 1;
-    //     return result;
-    // };
+    function addOne(num1){
+        let result = num1 + 1;
+        return result;
+    };
 
-    // console.log(addOne(1));
-    // console.log(addOne(-5));
+    console.log(addOne(1));
+    console.log(addOne(-5));
 
   
   
@@ -197,7 +197,7 @@
   -----------------------------------------------------------------*/
   // Your solution for 08-removeEnds here:
   
-  //*** Unable to get the below working ***
+  //*** Very stuck on this one! ***
 
   // function removeEnds(str){
   //   let str = (str.splice(0,1) && str.pop());
@@ -205,10 +205,27 @@
   //   console.log(result)
   // };
 
-
   // removeEnds("SEI Rocks!");
 
   
+  // function removeEnds(str){
+  //   console.log(string.trimLeft, string.trimRight));
+  // };
+
+  // function removeEnds(str,ch)
+  // {
+  //     for (i = str.length - 1; i >= 0; i--)
+  //     {
+  //         if (ch != str.charAt(i))
+  //         {
+  //             str = str.substring(0, i + 1);
+  //             break;
+  //         }
+  //     } 
+  //     return str;
+  // }
+
+  // removeEnds("SEI Rocks!")
   
   /*-----------------------------------------------------------------
   Challenge: 09-charCount
@@ -224,7 +241,7 @@
   -----------------------------------------------------------------*/
   // Your solution for 09-charCount here:
   
-  // *** Struggled with this one; not really sure how to achieve it. 
+  // *** Struggled with this one; not really sure how to achieve it ***
   // function charCount(["str"]){
   //   if(str result = str.split("").reverse().join("").
   // }
@@ -256,7 +273,13 @@
   -----------------------------------------------------------------*/
   // Your solution for 10-formatWithPadding here:
   
-  // function charCount(num1, str, num2){
+  // function formatWithPadding(num1, str, num2){
+
+    // function formatWithPadding(num1, str, num2){ { 
+    //   var result = 0, i = 0;
+    //   for(i;i<this.length;i++)if(this[i]==c)result++;
+    //   return result;
+    // };
 
 
   
@@ -281,6 +304,7 @@
   
 
    //*** Unable to get the below working ***
+
   // function isPalindrome(str){
   //   if(str === (str.split("").reverse().join(""))){
   //     console.log("true");
@@ -291,6 +315,9 @@
 
   // isPalindrome(rotor);
   // isPalindrome(cat);
+
+
+  
 
 
   
@@ -311,8 +338,23 @@
   hammingDistance('abc', 'ab'); //=> NaN
   -----------------------------------------------------------------*/
   // Your solution for 12-hammingDistance here:
-  
-  
+
+// let str1 = "abc";
+// let str2 = "abc";
+
+// function hammingDistance(str1, str2){
+//    if (str1.length !== str2.length) {
+//       return "NaN";
+//    }
+//    let dist = 0;
+//    for (let i = 0; i < str1.length; i += 1) {
+//       if (str1[i] !== str2[i]) {
+//          dist += 1;
+//       };
+//    };
+//    return dist;
+// };
+// console.log(hammingDistance(str1, str2));
   
   
   
@@ -331,6 +373,9 @@
   -----------------------------------------------------------------*/
   // Your solution for 13-mumble here:
   
+  // function mumble(str)
+
+
   
   
   
